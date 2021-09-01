@@ -19,17 +19,16 @@ const formula1Champions = [
     "Hamilton",
     "Hamilton",
     "Hamilton",
-    "Hamilton"
+    "Hamilton",
 ]
 let winners = {};
 
 function countWin(driver) {
     // your code goes here
-    let driverName = driver;
     if (!winners.hasOwnProperty(driver)) {
-        winners[driverName] = 0;
+        winners[driver] = 0;
     }
-    winners[driverName]++;
+    winners[driver]++;
 }
 formula1Champions.forEach(countWin)
 console.log(winners)
